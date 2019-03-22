@@ -12,6 +12,7 @@ const BASE_DIRECTORY: &str = "/etc/LSOCNeutronUpdateClient/";
 const SETTINGS_FILE_LOCATION: &str = "/etc/LSOCNeutronUpdateClient/settings.json";
 
 const SETTINGS_DEFAULT: &str = r#"{
+    "main_neutron_account": "",
     "mosquitto_client": {
         "username": "",
         "password": ""

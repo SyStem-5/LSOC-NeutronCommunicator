@@ -100,8 +100,11 @@ fn main() {
     let mut core = Core::new().unwrap();
     let client = Client::new();
     let url: Uri = format!(
-        "{}/api/versioncontrol?username={}&password={}&application={}&branch={}&components={}&versions={}",
+        "{}/api/versioncontrol?neutronuser={}&username={}&password={}&application={}&branch={}&components={}&versions={}",
         NEUTRON_UPDATE_SERVER_URL,
+        settings["main_neutron_account"]
+            .as_str()
+            .unwrap_or_default(),
         settings["mosquitto_client"]["username"]
             .as_str()
             .unwrap_or_default(),
