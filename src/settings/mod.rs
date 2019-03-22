@@ -13,8 +13,8 @@ const SETTINGS_FILE_LOCATION: &str = "/etc/LSOCNeutronUpdateClient/settings.json
 
 const SETTINGS_DEFAULT: &str = r#"{
     "mosquitto_client": {
-        "username": "test_neco_1",
-        "password": "stupidpass.exe"
+        "username": "",
+        "password": ""
     },
     "blackbox_uds_path": "/etc/BlackBox/uds",
     "app_name": "lsoc",
