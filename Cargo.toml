@@ -4,6 +4,12 @@ version = "0.1.0"
 authors = ["SyStem"]
 edition = "2018"
 
+[features]
+default = ["INSECURE"]
+
+SECURE = []
+INSECURE = []
+
 [[bin]]
 name = "lsoc_neutron_communicator"
 path = "src/main.rs"
