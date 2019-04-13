@@ -15,6 +15,17 @@
         },
         {
             "type": "shell",
+            "label": "cargo build --development",
+            "command": "cargo",
+            "args": [
+                "build"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ]
+        },
+        {
+            "type": "shell",
             "label": "Rust Code Formatter",
             "command": "cargo",
             "args": [
